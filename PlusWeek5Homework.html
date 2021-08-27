@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Forecast</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="title">Weather Forecast</h1>
+      <form id="search-city">
+        <input type="city" placeholder="Search City" id="city-input" />
+        <button class="searchCity">Search</button>
+        <button id="current-location">Current Location</button>
+      </form>
+      <h2 id="city">Antwerp</h2>
+      <div class="row">
+        <div class="col-6" id="date">01/08/2021</div>
+        <div class="col-6" id="time">13:04</div>
+      </div>
+      <h1 class="currentTemperature">
+        <span id="temperature">18</span>
+        <span class="units">
+          <a id="celsius-link">°C</a> |
+          <a id="fahrenheit-link">°F</a>
+        </span>
+      </h1>
+      <div class="row">
+        <div class="col-4">Humidity: <span id="humidity">30</span>%</div>
+        <div class="col-4"><p id="img-weather">🌤</p></div>
+        <div class="col-4">Wind: <span id="wind">4</span>km/h</div>
+      </div>
+      <div class="row">
+        <div class="col" id="weekday">
+          Mon <br />🌧
+          <div class="temperature">20°C</div>
+        </div>
+        <div class="col" id="weekday">
+          Tue <br />🌧
+          <div class="temperature">20°C</div>
+        </div>
+        <div class="col" id="weekday">
+          Wed <br />🌧
+          <div class="temperature">20°C</div>
+        </div>
+        <div class="col" id="weekday">
+          Thu <br />🌧
+          <div class="temperature">20°C</div>
+        </div>
+        <div class="col" id="weekday">
+          Fri<br />🌧
+          <div class="temperature">20°C</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
